@@ -1,17 +1,18 @@
 #Content {
 	margin: 0 auto;
 	position: relative;
-	background: #4cbfee;
 	width: 400px;
 	height: 250px;
+	background: #4cbfee;
+	text-align: center;
+	font-family: sans-serif;
+	color: white;
 	border-radius: 10px;
 }
 
 #Counter {
-	text-align: center;
 	position: relative;
 	top: 50px;
-	color: white;
 }
 
 button {
@@ -20,11 +21,11 @@ button {
 	left: 50px;
 	height: 75px;
 	width: 300px;
-	border-radius: 10px;
-	border: none;
-	font-size: 35px;
 	background: #7DD0F2;
 	color: white;
+	font-size: 35px;
+	border-radius: 10px;
+	border: none;
 }
 
 button:focus {
