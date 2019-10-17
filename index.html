@@ -5,19 +5,25 @@
 	</head>
 	<body>
 		<div id="Content">
-			<h1 id="Counter"></h1>
+			<h1 id="Counter">0</h1>
 			<button id="Button" onclick="myfunction()">BPM</button>
 		</div>
 
 
 <script>
-	function myfunction() {
-		var clicks = 0, seconds = 0;
+var click = 0;
+var clicks = 0;
 
+var Counter = document.getElementById("Counter");
 
+function myfunction() {
+    var seconds = new Date().getTime();
 
-		document.getElementById("Counter").innerHTML = x;
-	}
+    clicks = ((1 / ((seconds - click) / 1000)) * 60);
+    click = seconds;
+    Counter.innerHTML = Math.floor(clicks);
+
+};
 </script>
 	</body>
 	<footer>
